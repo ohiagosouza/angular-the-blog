@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-small-card',
@@ -10,4 +10,15 @@ import { Component } from '@angular/core';
     './small-card.responsive.component.css',
   ],
 })
-export class SmallCardComponent {}
+export class SmallCardComponent {
+  @Input()
+  photoCover: String = 'https://placehold.co/600x400?text=No+Preview';
+  @Input()
+  cardPosted: String = new Date().toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+    year: 'numeric',
+  });
+  @Input()
+  cardTitle: String = '';
+}

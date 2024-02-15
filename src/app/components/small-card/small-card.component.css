@@ -3,6 +3,10 @@
   width: 600px;
 }
 
+.container-small-card > a {
+  text-decoration: none;
+}
+
 .small-card-content {
   display: flex;
   flex-direction: row;
@@ -22,6 +26,7 @@
 
 .small-card-title {
   font-size: 0.5rem;
+  color: #fff;
 }
 
 .article-separator {

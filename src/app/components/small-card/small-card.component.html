@@ -1,20 +1,18 @@
 <div class="container-small-card">
-  <div class="small-card-content">
-    <div class="small-card-img">
-      <img
-        src="https://s2-techtudo.glbimg.com/PW186z929yHANcwTeLDQpsgBM0Q=/0x0:620x350/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_08fbf48bc0524877943fe86e43087e7a/internal_photos/bs/2021/U/B/O2DZteRA6dtu2OneGEKA/2013-11-21-batman-arkham-origins-logo-620x350.jpg"
-        alt="small news"
-      />
-    </div>
-
-    <div class="small-card-title">
-      <div class="small-card-postedDate">
-        <p>January 15, 2024</p>
+  <a href="#">
+    <div class="small-card-content">
+      <div class="small-card-img">
+        <img src="{{ photoCover }}" alt="{{ cardTitle }}" />
       </div>
-      <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis!</h1>
-    </div>
-  </div>
 
+      <div class="small-card-title">
+        <div class="small-card-postedDate">
+          <p>{{ cardPosted }}</p>
+        </div>
+        <h1>{{ cardTitle }}</h1>
+      </div>
+    </div>
+  </a>
   <div class="article-separator">
     <hr />
   </div>
