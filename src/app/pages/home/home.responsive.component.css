@@ -1,0 +1,6 @@
+@media (max-width: 700px) {
+  .container-articles {
+    display: flex;
+    flex-direction: column;
+  }
+}
