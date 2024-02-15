@@ -1,0 +1,14 @@
+.container-menu-bar > ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.container-menu-bar > ul > li {
+  margin-right: 0.8rem;
+  list-style: none;
+  color: #fff;
+}
+
+.container-menu-bar > ul > li > a {
+  color: #fff;
+}

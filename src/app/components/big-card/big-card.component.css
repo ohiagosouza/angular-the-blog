@@ -1,0 +1,36 @@
+.container-big-card {
+  color: #fff;
+  width: 400px;
+  height: 500px;
+  margin: 0 2.5rem;
+  gap: 0.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.container-big-card > a {
+  text-decoration: none;
+}
+
+.big-card-img > img {
+  width: 100%;
+  min-width: 350px;
+}
+
+.big-card-postedDate > p {
+  margin: 0.6rem 0;
+  color: #7c7c7c;
+  font-size: 0.9rem;
+}
+
+.big-card-title > h1 {
+  margin: 0 0 0.8rem 0;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.big-card-description > p {
+  color: #7c7c7c;
+}

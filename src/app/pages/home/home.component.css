@@ -1,0 +1,17 @@
+.container-articles {
+  margin: 3rem 0;
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.articles-right {
+  gap: 2rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
