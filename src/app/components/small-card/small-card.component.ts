@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-small-card',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './small-card.component.html',
   styleUrls: [
     './small-card.component.css',
@@ -11,6 +12,8 @@ import { Component, Input } from '@angular/core';
   ],
 })
 export class SmallCardComponent {
+  @Input()
+  Id: number = 0;
   @Input()
   photoCover: String = 'https://placehold.co/600x400?text=No+Preview';
   @Input()

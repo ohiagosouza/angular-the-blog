@@ -1,16 +1,17 @@
 import { Component, Input } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
+import { dataFake } from '../../data/dataFake';
 
 @Component({
   selector: 'app-content',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterLink],
   templateUrl: './content.component.html',
-  styleUrl: './content.component.css',
+  styleUrls: ['./content.component.css', './content.responsive.component.css'],
 })
 export class ContentComponent {
   @Input()
-  photoCover: String = 'https://placehold.co/1280x720?text=No+Preview';
+  photoCover: String = '';
   @Input()
   cardPosted: String = new Date().toLocaleDateString('en-US', {
     month: 'long',
@@ -21,4 +22,22 @@ export class ContentComponent {
   cardTitle: String = '';
   @Input()
   cardDescription: String = '';
+
+  private id: string | null = '0';
+
+  constructor(private route: ActivatedRoute) {}
+
+  ngOnInit(): void {
+    this.route.paramMap.subscribe((value) => (this.id = value.get('id')));
+    this.setValueToComponent(this.id);
+  }
+
+  setValueToComponent(id: string | null) {
+    const result = dataFake.filter((article) => article.id === id)[0];
+
+    this.cardTitle = result.title;
+    this.photoCover = result.photoCover;
+    this.cardPosted = result.postedOn;
+    this.cardDescription = result.description;
+  }
 }

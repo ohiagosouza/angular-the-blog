@@ -31,14 +31,15 @@
 .content-posted > p {
   color: #7c7c7c;
   text-align: start;
+  margin: 1rem;
 }
 
 .content-title {
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 .content-description {
-  margin: 1rem 0;
+  margin: 1rem 1rem 5rem 1rem;
 }
 
 .content-description > p {

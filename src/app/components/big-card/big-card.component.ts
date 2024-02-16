@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-big-card',
   standalone: true,
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './big-card.component.html',
   styleUrls: [
     './big-card.component.css',
@@ -11,6 +12,8 @@ import { Component, Input } from '@angular/core';
   ],
 })
 export class BigCardComponent {
+  @Input()
+  Id: number = 0;
   @Input()
   photoCover: String = 'https://placehold.co/600x400?text=No+Preview';
   @Input()
