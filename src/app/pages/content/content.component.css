@@ -1,0 +1,47 @@
+.container-content {
+  width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-content > a {
+  display: flex;
+  align-items: flex-start;
+  text-decoration: none;
+  margin: 0.5rem 0;
+}
+
+.content-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-cover > img {
+  border: 3px solid rgb(144, 144, 144);
+  border-radius: 1rem;
+
+  width: 630px;
+  height: 360px;
+}
+
+.content-posted > p {
+  color: #7c7c7c;
+  text-align: start;
+}
+
+.content-title {
+  margin: 1rem 0;
+}
+
+.content-description {
+  margin: 1rem 0;
+}
+
+.content-description > p {
+  color: #7c7c7c;
+  width: 700px;
+}
