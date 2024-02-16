@@ -9,6 +9,4 @@ import { ComponentsModule } from './components/components.module';
   styleUrl: './app.component.css',
   imports: [RouterModule, ComponentsModule],
 })
-export class AppComponent {
-  title = 'The Blog';
-}
+export class AppComponent {}

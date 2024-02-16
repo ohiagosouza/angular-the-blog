@@ -1,6 +1,7 @@
 .container-menu-bar > ul {
   display: flex;
   flex-direction: row;
+  padding: 0.3rem;
 }
 
 .container-menu-bar > ul > li {
